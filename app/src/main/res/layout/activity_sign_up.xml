@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/login_container"
+    android:padding="40dp"
+    android:background="@drawable/animation_colors"
+    tools:context="com.company.insta.instagram.authentication.SignUpActivity">
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/instagram_logo"
+            android:layout_marginBottom="40dp"/>
+
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:backgroundTint="#fff"
+            android:drawableLeft="@drawable/ic_email"
+            android:id="@+id/user_email"
+            android:drawablePadding="10dp"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Username"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:backgroundTint="#fff"
+            android:drawableLeft="@drawable/ic_smile"
+            android:id="@+id/user_name"
+            android:drawablePadding="10dp"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:backgroundTint="#fff"
+            android:drawableLeft="@drawable/ic_out"
+            android:inputType="textPassword"
+            android:id="@+id/user_password"
+            android:drawablePadding="10dp"
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Confirm Password"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:backgroundTint="#fff"
+            android:drawableLeft="@drawable/ic_out"
+            android:inputType="textPassword"
+            android:id="@+id/user_password_confirm"
+            android:drawablePadding="10dp"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/sign_up_btn"
+            android:text="Sign Up"
+            android:textColor="#ffffff"
+            android:background="#79a209df"
+            android:textAllCaps="false"
+            />
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="Have Account? Log In"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:id="@+id/go_to_login_btn"/>
+
+    </LinearLayout>
+
+

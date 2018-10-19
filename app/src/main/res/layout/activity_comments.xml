@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.company.insta.instagram.CommentsActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/comment_toolbar">
+
+        <include layout="@layout/comment_toolbar"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/comment_toolbar"
+        android:layout_marginBottom="60dp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/comment_lv"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:layout_marginBottom="20dp">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:background="@color/colorWhite"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:hint="Add a Comment..."
+            android:id="@+id/comment_et"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:background="@color/colorWhite"
+            android:src="@drawable/ic_check"
+            android:layout_alignParentRight="true"
+            android:id="@+id/comment_send_btn"/>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

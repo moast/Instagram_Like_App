@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:id="@+id/relLayout2">
+
+
+
+            <!-- Upper Part Layout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:id="@+id/upper_part_layout">
+
+
+                <!--Profile Image Layout -->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="25dp"
+                    tools:ignore="Suspicious0dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="25"
+                    android:layout_marginTop="10dp">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/profile_image"
+                        android:src="@drawable/user"/>
+
+
+                </RelativeLayout>
+               <!-- End of Profile Image Layout-->
+
+
+
+
+
+                <!-- Posts & Followers Part Layout-->
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginStart="30dp"
+                    tools:ignore="Suspicious0dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="75"
+                    android:layout_marginRight="30dp">
+
+               <include layout="@layout/upper_part_snippet"/>
+
+                </RelativeLayout>
+
+                <!--End of Posts & Followrs Part Layout -->
+
+            </LinearLayout>
+            <!-- End of Upper Part-->
+
+
+
+            <!-- Middle Part Layout-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/upper_part_layout"
+                android:orientation="vertical"
+                android:id="@+id/middle_part_layout"
+                android:padding="20dp"
+                android:background="@color/colorWhite"
+                android:layout_marginBottom="20dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:id="@+id/display_name_tv"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/description"/>
+
+
+
+            </LinearLayout>
+          <!--End of Middle Part Layout-->
+
+
+
+
+
+
+            <!-- Lower Part Layout-->
+
+            <RelativeLayout
+                android:id="@+id/lower_part_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/middle_part_layout"
+                android:layout_marginBottom="1dp"
+                >
+
+
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/images_grid_layout"
+                    android:gravity="center"
+                    android:numColumns="3"
+                    android:verticalSpacing="1dp"
+                    android:horizontalSpacing="1dp"
+                    android:stretchMode="columnWidth"
+
+
+                    />
+
+
+
+            </RelativeLayout>
+            <!---End of Lower Part-->
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</merge>

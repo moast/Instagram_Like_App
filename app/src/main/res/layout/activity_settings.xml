@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.company.insta.instagram.SettingsActivity">
+
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/settings_app_bar"
+
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/settings_toolbar"
+            android:background="@color/colorWhite">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/back_arrow"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_arrow_back"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Settings"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPink"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/border"
+                    android:text="Done"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/colorPink"
+                    android:id="@+id/done_edit"
+                     />
+
+
+
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:id="@+id/general_layout"
+        android:background="@drawable/border"
+        android:layout_below="@+id/settings_app_bar"
+        >
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/username_et"
+            android:text="username"
+            android:textColor="@color/colorGray"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp"
+            android:drawableLeft="@drawable/ic_profile"
+            android:drawablePadding="5dp"
+            />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/desc_et"
+            android:text="description"
+            android:textColor="@color/colorGray"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/username_et"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="5dp"
+            />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/user"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/profile_image"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Edit Photo"
+            android:layout_below="@+id/profile_image"
+            android:id="@+id/edit_image"/>
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/private_layout"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/general_layout"
+        android:background="@drawable/border"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Private Data"
+            android:id="@+id/private_data_tv"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="18sp"
+            />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_et"
+            android:text="email"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/colorGray"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/private_data_tv"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="5dp"
+            />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

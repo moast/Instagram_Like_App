@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorWhite">
+
+        <!-- Upper Relative Layout-->
+        <RelativeLayout
+            android:id="@+id/upper_part_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_photo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/username_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/profile_photo"
+                android:text="name"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+
+                />
+
+            <ImageView
+                android:id="@+id/threedots_iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/three_dots" />
+
+
+        </RelativeLayout>
+
+
+        <!--Middle Layout-->
+
+        <com.company.insta.instagram.helper.SquareImageView
+            android:id="@+id/story_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/upper_part_layout"
+            android:scaleType="centerCrop" />
+
+
+        <!-- Lower Relative Layout-->
+
+        <RelativeLayout
+            android:id="@+id/lower_part_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/story_image"
+            android:background="@color/colorWhite">
+
+
+            <!-- heart holder -->
+            <RelativeLayout
+                android:id="@+id/heart_layout"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite">
+
+                <ImageView
+                    android:id="@+id/red_heart_like"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ic_red_heart"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/white_heart_like"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ic_white_heart"
+                    android:visibility="visible" />
+
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/comment_bubble"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/heart_layout"
+                android:src="@drawable/ic_comment_bubble"
+                android:visibility="visible"
+
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/lower_of_lower_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lower_part_layout"
+            android:layout_marginBottom="40dp"
+            android:background="@color/colorWhite"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/num_of_likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="130 likes"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/image_tags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/num_of_likes"
+                android:layout_marginTop="10dp"
+                android:text="#tags title"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/view_all_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_tags"
+                android:layout_marginTop="10dp"
+                android:text="View All Comments"
+                android:textColor="@color/colorGray"
+                android:textSize="15sp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/image_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_all_comments"
+                android:layout_marginTop="10dp"
+                android:text="20 days ago"
+                android:textColor="@color/colorGray"
+                android:textSize="15sp"
+
+                />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
