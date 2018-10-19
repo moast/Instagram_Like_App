@@ -6,5 +6,5 @@ Download the course code, open it in Android Studio and use your emulator or dev
 WARNNING: please don't try to upload this app to Google Play Store because you will get a violation as Google will NOT allow uploading similar apps like Instagram.
 
 <h2>How to create it?</h2>
-Check out my course on Udemy you will get 90% discount if you use this link:
+Check out my course on Udemy you will get 90% discount if you use this link: <br>
 https://www.udemy.com/instagram-like-app-for-android/?couponCode=GITHUB_COUPON
